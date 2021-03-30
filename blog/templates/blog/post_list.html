@@ -1,26 +1,20 @@
+
 <html>
     <head>
         <title>Darya G. Blog</title>
     </head>
     <body>
-        <h1><p>Всем привет меня зовут Дарья это мой блог :) подписывайтесь и ставьте лайки</p></h1>
-        <p>Блог и Тисе</p>
-        <div>
-            <h1><a href="/">Дарья блог</a></h1>
-        </div>
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Как покормить Тишу</a></h2>
-            <p>Нужно положить еду</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Как почесать Тису</a></h2>
-            <p>Нужно ногтями пальцев почесать его</p>
-        </div>
-
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 
     </body>
 </html>
