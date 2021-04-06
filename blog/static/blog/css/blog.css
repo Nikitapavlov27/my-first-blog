@@ -1,0 +1,39 @@
+
+h1 a {
+    color: #671485;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+body {
+    padding-left: 10px;
+}
+
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.date {
+    color: #828282;
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+
+div[class^=col]{
+ background: #8CC7D9;
+ border: 1px solid #6B6ACD;
+}
+
+.content {
+    margin-left: 0px;
+}
